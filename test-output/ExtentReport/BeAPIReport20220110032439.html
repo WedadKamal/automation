@@ -1,0 +1,1152 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset='utf-8' /> 
+	<meta name='description' content='' />
+	<meta name='robots' content='noodp, noydir' />
+	<meta name='viewport' content='width=device-width, initial-scale=1' />
+	<meta id="timeStampFormat" name="timeStampFormat" content='MMM d, yyyy hh:mm:ss a'/>
+	
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600' rel='stylesheet' type='text/css' />
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+	<link href='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/css/extent.css' type='text/css' rel='stylesheet' />
+	
+	<title>Business Entity Report</title>
+
+	<style type='text/css'>
+		/* json-tree */
+		.jstBracket,.jstComma,.jstValue{white-space:pre-wrap}.jstValue{font-size:10px;font-weight:400;font-family:"Lucida Console",Monaco,monospace}.jstProperty{color:#666;word-wrap:break-word}.jstBool{color:#2525CC}.jstNum{color:#D036D0}.jstNull{color:gray}.jstStr{color:#2DB669}.jstFold:after{content:' -';cursor:pointer}.jstExpand{white-space:normal}.jstExpand:after{content:' +';cursor:pointer}.jstFolded{white-space:normal!important}.jstHiddenBlock{display:none}
+	</style>
+	
+	<script type="text/javascript">
+		/*! json-tree - v0.2.2 - 2017-09-25, MIT LICENSE */
+		var JSONTree=function(){var n={"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#x27;","/":"&#x2F;"},t=0,r=0;this.create=function(n,t){return r+=1,N(u(n,0,!1),{class:"jstValue"})};var e=function(t){return t.replace(/[&<>'"]/g,function(t){return n[t]})},s=function(){return r+"_"+t++},u=function(n,t,r){if(null===n)return f(r?t:0);switch(typeof n){case"boolean":return l(n,r?t:0);case"number":return i(n,r?t:0);case"string":return o(n,r?t:0);default:return n instanceof Array?a(n,t,r):c(n,t,r)}},c=function(n,t,r){var e=s(),u=Object.keys(n).map(function(r){return j(r,n[r],t+1,!0)}).join(m()),c=[g("{",r?t:0,e),N(u,{id:e}),p("}",t)].join("\n");return N(c,{})},a=function(n,t,r){var e=s(),c=n.map(function(n){return u(n,t+1,!0)}).join(m());return[g("[",r?t:0,e),N(c,{id:e}),p("]",t)].join("\n")},o=function(n,t){var r=e(JSON.stringify(n));return N(v(r,t),{class:"jstStr"})},i=function(n,t){return N(v(n,t),{class:"jstNum"})},l=function(n,t){return N(v(n,t),{class:"jstBool"})},f=function(n){return N(v("null",n),{class:"jstNull"})},j=function(n,t,r){var s=v(e(JSON.stringify(n))+": ",r),c=N(u(t,r,!1),{});return N(s+c,{class:"jstProperty"})},m=function(){return N(",\n",{class:"jstComma"})},N=function(n,t){return d("span",t,n)},d=function(n,t,r){return"<"+n+Object.keys(t).map(function(n){return" "+n+'="'+t[n]+'"'}).join("")+">"+r+"</"+n+">"},g=function(n,t,r){return N(v(n,t),{class:"jstBracket"})+N("",{class:"jstFold",onclick:"JSONTree.toggle('"+r+"')"})};this.toggle=function(n){var t=document.getElementById(n),r=t.parentNode,e=t.previousElementSibling;""===t.className?(t.className="jstHiddenBlock",r.className="jstFolded",e.className="jstExpand"):(t.className="",r.className="",e.className="jstFold")};var p=function(n,t){return N(v(n,t),{})},v=function(n,t){return Array(2*t+1).join(" ")+n};return this}();
+	</script>
+</head>
+	<body class='extent dark default hide-overflow '>
+		<div id='theme-selector' alt='Click to toggle theme. To enable by default, use theme configuration.' title='Click to toggle theme. To enable by default, use theme configuration.'>
+			<span><i class='material-icons'>desktop_windows</i></span>
+		</div>
+<nav>
+	<div class="nav-wrapper">
+		<a href="#!" class="brand-logo black"><img src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/d74480e/commons/img/logo.png"></a>
+		<!-- slideout menu -->
+		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
+			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
+						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></a></li>
+		</ul>
+		<!-- report name -->
+		<span class='report-name'>Business Entity Report</span>
+		<!-- report headline -->
+		<span class='report-headline'></span>
+		<!-- nav-right -->
+		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
+			<a href='#!'>
+			<span class='label blue darken-3 suite-start-time'>Jan 10, 2022 03:24:39 PM</span>
+			</a>
+		</ul>
+	</div>
+</nav>		<!-- container -->
+		<div class='container'>
+<div id='test-view' class='view'>
+	<section id='controls'>
+		<div class='controls grey lighten-4'>
+			<!-- test toggle -->
+			<div class='chip transparent'>
+				<a class='dropdown-button tests-toggle' data-activates='tests-toggle' data-constrainwidth='true' data-beloworigin='true' data-hover='true' href='#'>
+				<i class='material-icons'>warning</i> Status
+				</a>
+				<ul id='tests-toggle' class='dropdown-content'>
+										<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
+					<li class='divider'></li>
+					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
+				</ul>
+			</div>
+			<!-- test toggle -->
+			<!-- category toggle -->
+			<!-- category toggle -->
+			<!-- clear filters -->
+			<div class='chip transparent hide'>
+				<a class='' id='clear-filters' alt='Clear Filters' title='Clear Filters'>
+				<i class='material-icons'>close</i> Clear
+				</a>
+			</div>
+			<!-- clear filters -->
+			<!-- enable dashboard -->
+			<div id='toggle-test-view-charts' class='chip transparent'>
+				<a class='pink-text' id='enable-dashboard' alt='Enable Dashboard' title='Enable Dashboard'>
+				<i class='material-icons'>track_changes</i> Dashboard
+				</a>
+			</div>
+			<!-- enable dashboard -->
+			<!-- search -->
+			<div class='chip transparent' alt='Search Tests' title='Search Tests'>
+				<a href="#" class='search-div'>
+				<i class='material-icons'>search</i> Search
+				</a>
+				<div class='input-field left hide'>
+					<input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
+				</div>
+			</div>
+			<!-- search -->
+		</div>
+	</section>
+<div id='test-view-charts' class='subview-full'>
+    <div id='charts-row' class='row nm-v nm-h'>
+        <div class='col s12 m12 l12 np-h'>
+            <div class='card-panel nm-v'>
+                <div class='left panel-name'>Tests</div>
+                <div class='chart-box' style="max-height:94px;">
+                    <canvas id='parent-analysis' width='90' height='70'></canvas>
+                </div>
+                <div class='block text-small'>
+                    <span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> test(s) passed</span>
+                </div>
+                <div class='block text-small'>
+                    <span class='strong tooltipped' data-position='top' data-tooltip='100%'>4</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="timeline-chart" class="row nm-v nm-h">
+        <div class="col s12 m12 l12 np-h">
+            <div class="card-panel">
+                <div class='left panel-name'>Timeline (seconds)</div>
+                <div class="chart-box" style="width:98%;max-height:145px;">
+                    <canvas id="timeline" height="120"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>	<div class='subview-left left'>
+		<div class='view-summary'>
+			<ul id='test-collection' class='test-collection'>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='1'>
+					<div class='test-heading'>
+						<span class='test-name'>Change My Profile with ALL valid Feilds data</span>
+						<span class='test-time'>Jan 10, 2022 03:24:43 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 10, 2022 03:24:43 PM</span>
+	<span class='label end-time'>Jan 10, 2022 03:24:47 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+168ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:43 PM</td>
+				<td class='step-details'>
+						Change My Profile with ALL valid Feilds data Test is CREATED
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:43 PM</td>
+				<td class='step-details'>
+						*******   Create an instance of ServiceDelegate to start backend verification     ********
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:43 PM</td>
+				<td class='step-details'>
+						***********      Openning DB connection to BUSINESS_ENTITY       **************
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:46 PM</td>
+				<td class='step-details'>
+						**********      DB Connection created successfully to BUSINESS_ENTITY       ***********
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:46 PM</td>
+				<td class='step-details'>
+						*********      Executing DB Query     ************
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:46 PM</td>
+				<td class='step-details'>
+						select BUSINESS_ENTITY.ID ,BUSINESS_ENTITY.NAME_EN, BUSINESS_ENTITY.NAME_AR, BUSINESS_ENTITY.PHONE_NUMBER, BUSINESS_ENTITY.EMAIL,BUSINESS_ENTITY.LOGO_URL,BUSINESS_ENTITY.STATUS_ID,BUSINESS_ENTITY.CIF,BUSINESS_ENTITY.CREATION_DATE,
+LK_CSP.ID as CSP_ID, LK_CSP.CODE as CSP_CODE,LK_CSP.NAME_EN as CSP_NAME_EN,LK_CSP.NAME_AR as CSP_NAME_AR,LK_CSP.IS_DEFAULT as CSP_IS_DEFAULT ,LK_CSP.CHANNEL_CODE as CSP_CHANNEL_CODE ,LK_CSP.SOF_URL as CSP_SOF_URL,LK_CSP.SENDER as CSP_SENDER,
+LK_BUSINESS_ENTITY_CATEGORY.ID as CATEGOTY_ID ,LK_BUSINESS_ENTITY_CATEGORY.CODE as CATEGOTY_CODE ,LK_BUSINESS_ENTITY_CATEGORY.NAME_EN as CATEGOTY_NAME_EN ,LK_BUSINESS_ENTITY_CATEGORY.NAME_AR as CATEGOTY_NAME_AR ,
+LK_BUSINESS_ENTITY_TYPE.ID as TYPE_ID ,LK_BUSINESS_ENTITY_TYPE.CODE as TYPE_CODE,LK_BUSINESS_ENTITY_TYPE.NAME_AR as TYPE_NAME_AR,LK_BUSINESS_ENTITY_TYPE.NAME_EN as TYPE_NAME_EN,
+LK_CHANNEL.ID as CHANNEL_ID,LK_CHANNEL.CODE as CHANNEL_CODE,LK_CHANNEL.NAME_EN as CHANNEL_NAME_EN,LK_CHANNEL.NAME_AR as CHANNEL_NAME_AR,
+BUSINESS_ENTITY_ADDRESS.ADDRESS as ADDRESS,
+LK_AREA.ID as AREA_ID,LK_AREA.CODE as AREA_CODE,LK_AREA.NAME_EN as AREA_NAME_EN,LK_AREA.NAME_AR as AREA_NAME_AR,
+LK_REGION.ID as REGION_ID,LK_REGION.CODE as REGION_CODE,LK_REGION.NAME_EN as REGION_NAME_EN,LK_REGION.NAME_AR as REGION_NAME_AR,
+SOCIAL_LINKS.FACEBOOK as FACEBOOK ,SOCIAL_LINKS.TWITTER as TWITTER ,SOCIAL_LINKS.INSTAGRAM as INSTAGRAM ,SOCIAL_LINKS.YOUTUBE as YOUTUBE ,SOCIAL_LINKS.WEBSITE as WEBSITE,
+ACCOUNT.ACCOUNT_NUMBER AS ACCOUNT_NUMBER,ACCOUNT.ID As ACCOUNT_ID ,ACCOUNT.BUSINESS_ENTITY_ID AS ACCOUNT_BUSINESS_ENTITY_ID,ACCOUNT.BRANCH_ID AS ACCOUNT_BRANCH_ID ,ACCOUNT.TERMINAL_ID AS ACCOUNT_TERMINAL_ID ,ACCOUNT.CLEARING_ACCOUNT_ID AS ACCOUNT_CLEARING_ACCOUNT_ID ,ACCOUNT.CLEARING_TERM AS ACCOUNT_CLEARING_TERM
+,ACCOUNT.CLEARING_NO_OF_DAYS AS ACCOUNT_CLEARING_NO_OF_DAYS ,ACCOUNT.ACCOUNT_BUSINESS_ENTITY_ID AS ACC_ACCOUNT_BUSINESS_ENTITY_ID,ACCOUNT.TYPE AS ACCOUNT_TYPE ,ACCOUNT.PARENT_ID AS ACCOUNT_PARENT_ID ,ACCOUNT.STATUS AS ACCOUNT_STATUS
+                from BUSINESS_ENTITY LEFT join LK_CSP
+              on BUSINESS_ENTITY.CSP_ID = LK_CSP.ID
+              
+              LEFT JOIN LK_BUSINESS_ENTITY_CATEGORY
+              on BUSINESS_ENTITY.BUSINESS_ENTITY_CATEGORY_ID = LK_BUSINESS_ENTITY_CATEGORY.ID
+              
+              LEFT JOIN LK_BUSINESS_ENTITY_TYPE
+              on BUSINESS_ENTITY.TYPE_ID = LK_BUSINESS_ENTITY_TYPE.ID
+              
+              LEFT JOIN BUSINESS_ENTITY_CHANNEL_CONFIG
+              on BUSINESS_ENTITY.ID = BUSINESS_ENTITY_CHANNEL_CONFIG.BUSINESS_ENTITY_ID
+              
+              LEFT JOIN LK_CHANNEL
+              on BUSINESS_ENTITY_CHANNEL_CONFIG.CHANNEL_ID = LK_CHANNEL.ID
+              
+              LEFT JOIN BUSINESS_ENTITY_ADDRESS
+              on BUSINESS_ENTITY.ID = BUSINESS_ENTITY_ADDRESS.BUSINESS_ENTITY_ID
+              
+              LEFT JOIN LK_AREA
+              on BUSINESS_ENTITY_ADDRESS.AREA_ID = LK_AREA.ID
+              
+              LEFT JOIN LK_REGION
+              on LK_AREA.REGION_ID = LK_REGION.ID
+              
+              LEFT JOIN SOCIAL_LINKS
+              on BUSINESS_ENTITY.ID = SOCIAL_LINKS.BUSINESS_ENTITY_ID
+              
+              LEFT JOIN ACCOUNT
+              ON BUSINESS_ENTITY.ID = ACCOUNT.BUSINESS_ENTITY_ID
+              
+              where BUSINESS_ENTITY.EMAIL = 'automation_5@gmail.com'
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:46 PM</td>
+				<td class='step-details'>
+						************     DB Query executed successfully     ***************
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:46 PM</td>
+				<td class='step-details'>
+						******     Closing DB Connection      *******
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:47 PM</td>
+				<td class='step-details'>
+						******      DB Connection closed successfully     *******
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:47 PM</td>
+				<td class='step-details'>
+						sending myProfile api to http://10.95.0.178/be-api/profile
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:47 PM</td>
+				<td class='step-details'>
+						sending myProfile api {"csp":{"isDefault":"1","code":"FAWRYRTL","nameAr":"FAWRYRTL","sender":"FAWRY","id":"1","nameEn":"FAWRYRTL","sofUrl":"http:\/\/10.95.0.138:1727","channelCode":"1"},"socialLinks":{"youtube":"www.youtube1.com","twitter":"www.twitter1.com","website":"www.website1.com","facebook":"www.facebook1.com","instagram":"www.instgram1.com","id":2245},"nameAr":"au24047","address":{"area":{"code":"5292","nameAr":"المنطقة الصناعية","id":"5292","nameEn":"المنطقة الصناعية","region":{"code":"PortSaid","nameAr":"بور سعيد","id":"294","nameEn":"Port Said"}},"address":"more address infoo1","id":2245},"nameEn":"au24047","type":{"code":"Service Registeration","nameAr":"تسجيل الخدمة","id":"1","nameEn":"Service Registeration"},"phoneNumber":{"number":"01298155955","nationalNumber":"0129 815 5955","countryCode":"EG","dialCode":"+20","e164Number":"+201298155955","internationalNumber":"+20 129 815 5955"},"channels":[{"code":"POS","nameAr":"POS","id":"1","nameEn":"POS"},{"code":"MOB","nameAr":"MOB","id":"2","nameEn":"MOB"},{"code":"INT","nameAr":"INT","id":"3","nameEn":"INT"}],"logo":"data:image\/jpeg;base64,\/9j\/4AAQSkZJRgABAQAAAQABAAD\/\/gA8Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2OTApLCBxdWFsaXR5ID0gMTAwCv\/","id":2245,"category":{"code":"Online Store","nameAr":"متجر الكتروني","id":"2","nameEn":"Online Store"},"email":"au24047@gmail.com","account":{"subAccounts":null,"clearingTerm":null,"accountBalanceModel":null,"clearingAccount":{"subAccounts":null,"clearingTerm":null,"accountBalanceModel":null,"clearingAccount":null,"id":"74958","businessEntity":null,"terminal":null,"accountNumber":"2000007583","type":"SDA","branch":null,"clearingNoOfDays":null,"status":"ACTIVE"},"id":"74958","terminal":null,"businessEntity":{"cif":"2000007583","csp":{"isDefault":"0","code":"FAWRYPORTAL","nameAr":"FAWRYPORTAL","sender":"FAWRYPORTAL","id":"2","nameEn":"FAWRYPORTAL","sofUrl":"http:\/\/10.95.0.138:1727","channelCode":"1"},"nameAr":"automation_5","nameEn":"automation_5","logoUri":"images\/2245\/logo\/1640848834330\/95690e0c8e634b9f8af30e177807c8f4.jpeg","creationDate":"2022-01-07 04:31:08","type":{"code":"individual","nameAr":"افراد","id":"2","nameEn":"Individual"},"parentId":null,"selfRegisteredMerchantPassword":null,"phoneNumber":"01298155955","channels":[{"code":null,"nameAr":null,"id":null,"nameEn":null},{"code":null,"nameAr":null,"id":null,"nameEn":null},{"code":null,"nameAr":"MOB","id":"2","nameEn":null}],"logo":null,"id":2245,"category":{"code":"Online Store","nameAr":"متجر الكتروني","id":"2","nameEn":"Online Store"},"user":{"mobileNumber":"01234567890","id":0,"businessEntity":{"cif":null,"csp":null,"nameAr":"BO","nameEn":"BO","logoUri":null,"creationDate":null,"type":null,"parentId":null,"selfRegisteredMerchantPassword":null,"phoneNumber":null,"logo":null,"id":0,"category":null,"user":null,"account":null,"email":"bo@fawry.com","status":null},"branch":null,"email":"bo@fawry.com","status":null},"account":null,"email":"automation_5@gmail.com","status":{"id":"1"}},"accountNumber":"2000007583","type":"SDA","branch":null,"clearingNoOfDays":null,"status":"ACTIVE"},"status":{"id":"1"}}
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:47 PM</td>
+				<td class='step-details'>
+						myProfile API response with
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:24:47 PM</td>
+				<td class='step-details'>
+						API Failed with Actual Status code 400 and the expected status code is 201
+					
+				</td>
+			</tr>
+			<tr class='log' status='error'>
+				<td class='status error' title='error' alt='error'><i class='material-icons'>error</i></td>
+				<td class='timestamp'>3:24:47 PM</td>
+				<td class='step-details'>
+						Error occurred in com.fawry.API.angularAutomation.tests.MyProfile$1.MyProfile
+					
+				</td>
+			</tr>
+			<tr class='log' status='error'>
+				<td class='status error' title='error' alt='error'><i class='material-icons'>error</i></td>
+				<td class='timestamp'>3:24:47 PM</td>
+				<td class='step-details'>
+						The following asserts failed:
+	expected [201] but found [400]
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:47 PM</td>
+				<td class='step-details'>
+						logging Testcase FAILED MyProfile in Extent Report
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:24:47 PM</td>
+				<td class='step-details'>
+						Test Case Name FAILED is MyProfile
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:24:47 PM</td>
+				<td class='step-details'>
+						EXCEPTION Thrown is java.lang.AssertionError: null
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:47 PM</td>
+				<td class='step-details'>
+						Taking Screenshot for the FAILED Testcase
+					
+				</td>
+			</tr>
+			<tr class='log' status='warning'>
+				<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
+				<td class='timestamp'>3:24:47 PM</td>
+				<td class='step-details'>
+						Error occured while logging testcase MyProfile result to extent report
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='2'>
+					<div class='test-heading'>
+						<span class='test-name'>Change My Profile with only mandatory data</span>
+						<span class='test-time'>Jan 10, 2022 03:24:47 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 10, 2022 03:24:47 PM</span>
+	<span class='label end-time'>Jan 10, 2022 03:24:51 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+123ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:47 PM</td>
+				<td class='step-details'>
+						Change My Profile with only mandatory data Test is CREATED
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:47 PM</td>
+				<td class='step-details'>
+						*******   Create an instance of ServiceDelegate to start backend verification     ********
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:47 PM</td>
+				<td class='step-details'>
+						***********      Openning DB connection to BUSINESS_ENTITY       **************
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:50 PM</td>
+				<td class='step-details'>
+						**********      DB Connection created successfully to BUSINESS_ENTITY       ***********
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:50 PM</td>
+				<td class='step-details'>
+						*********      Executing DB Query     ************
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:50 PM</td>
+				<td class='step-details'>
+						select BUSINESS_ENTITY.ID ,BUSINESS_ENTITY.NAME_EN, BUSINESS_ENTITY.NAME_AR, BUSINESS_ENTITY.PHONE_NUMBER, BUSINESS_ENTITY.EMAIL,BUSINESS_ENTITY.LOGO_URL,BUSINESS_ENTITY.STATUS_ID,BUSINESS_ENTITY.CIF,BUSINESS_ENTITY.CREATION_DATE,
+LK_CSP.ID as CSP_ID, LK_CSP.CODE as CSP_CODE,LK_CSP.NAME_EN as CSP_NAME_EN,LK_CSP.NAME_AR as CSP_NAME_AR,LK_CSP.IS_DEFAULT as CSP_IS_DEFAULT ,LK_CSP.CHANNEL_CODE as CSP_CHANNEL_CODE ,LK_CSP.SOF_URL as CSP_SOF_URL,LK_CSP.SENDER as CSP_SENDER,
+LK_BUSINESS_ENTITY_CATEGORY.ID as CATEGOTY_ID ,LK_BUSINESS_ENTITY_CATEGORY.CODE as CATEGOTY_CODE ,LK_BUSINESS_ENTITY_CATEGORY.NAME_EN as CATEGOTY_NAME_EN ,LK_BUSINESS_ENTITY_CATEGORY.NAME_AR as CATEGOTY_NAME_AR ,
+LK_BUSINESS_ENTITY_TYPE.ID as TYPE_ID ,LK_BUSINESS_ENTITY_TYPE.CODE as TYPE_CODE,LK_BUSINESS_ENTITY_TYPE.NAME_AR as TYPE_NAME_AR,LK_BUSINESS_ENTITY_TYPE.NAME_EN as TYPE_NAME_EN,
+LK_CHANNEL.ID as CHANNEL_ID,LK_CHANNEL.CODE as CHANNEL_CODE,LK_CHANNEL.NAME_EN as CHANNEL_NAME_EN,LK_CHANNEL.NAME_AR as CHANNEL_NAME_AR,
+BUSINESS_ENTITY_ADDRESS.ADDRESS as ADDRESS,
+LK_AREA.ID as AREA_ID,LK_AREA.CODE as AREA_CODE,LK_AREA.NAME_EN as AREA_NAME_EN,LK_AREA.NAME_AR as AREA_NAME_AR,
+LK_REGION.ID as REGION_ID,LK_REGION.CODE as REGION_CODE,LK_REGION.NAME_EN as REGION_NAME_EN,LK_REGION.NAME_AR as REGION_NAME_AR,
+SOCIAL_LINKS.FACEBOOK as FACEBOOK ,SOCIAL_LINKS.TWITTER as TWITTER ,SOCIAL_LINKS.INSTAGRAM as INSTAGRAM ,SOCIAL_LINKS.YOUTUBE as YOUTUBE ,SOCIAL_LINKS.WEBSITE as WEBSITE,
+ACCOUNT.ACCOUNT_NUMBER AS ACCOUNT_NUMBER,ACCOUNT.ID As ACCOUNT_ID ,ACCOUNT.BUSINESS_ENTITY_ID AS ACCOUNT_BUSINESS_ENTITY_ID,ACCOUNT.BRANCH_ID AS ACCOUNT_BRANCH_ID ,ACCOUNT.TERMINAL_ID AS ACCOUNT_TERMINAL_ID ,ACCOUNT.CLEARING_ACCOUNT_ID AS ACCOUNT_CLEARING_ACCOUNT_ID ,ACCOUNT.CLEARING_TERM AS ACCOUNT_CLEARING_TERM
+,ACCOUNT.CLEARING_NO_OF_DAYS AS ACCOUNT_CLEARING_NO_OF_DAYS ,ACCOUNT.ACCOUNT_BUSINESS_ENTITY_ID AS ACC_ACCOUNT_BUSINESS_ENTITY_ID,ACCOUNT.TYPE AS ACCOUNT_TYPE ,ACCOUNT.PARENT_ID AS ACCOUNT_PARENT_ID ,ACCOUNT.STATUS AS ACCOUNT_STATUS
+                from BUSINESS_ENTITY LEFT join LK_CSP
+              on BUSINESS_ENTITY.CSP_ID = LK_CSP.ID
+              
+              LEFT JOIN LK_BUSINESS_ENTITY_CATEGORY
+              on BUSINESS_ENTITY.BUSINESS_ENTITY_CATEGORY_ID = LK_BUSINESS_ENTITY_CATEGORY.ID
+              
+              LEFT JOIN LK_BUSINESS_ENTITY_TYPE
+              on BUSINESS_ENTITY.TYPE_ID = LK_BUSINESS_ENTITY_TYPE.ID
+              
+              LEFT JOIN BUSINESS_ENTITY_CHANNEL_CONFIG
+              on BUSINESS_ENTITY.ID = BUSINESS_ENTITY_CHANNEL_CONFIG.BUSINESS_ENTITY_ID
+              
+              LEFT JOIN LK_CHANNEL
+              on BUSINESS_ENTITY_CHANNEL_CONFIG.CHANNEL_ID = LK_CHANNEL.ID
+              
+              LEFT JOIN BUSINESS_ENTITY_ADDRESS
+              on BUSINESS_ENTITY.ID = BUSINESS_ENTITY_ADDRESS.BUSINESS_ENTITY_ID
+              
+              LEFT JOIN LK_AREA
+              on BUSINESS_ENTITY_ADDRESS.AREA_ID = LK_AREA.ID
+              
+              LEFT JOIN LK_REGION
+              on LK_AREA.REGION_ID = LK_REGION.ID
+              
+              LEFT JOIN SOCIAL_LINKS
+              on BUSINESS_ENTITY.ID = SOCIAL_LINKS.BUSINESS_ENTITY_ID
+              
+              LEFT JOIN ACCOUNT
+              ON BUSINESS_ENTITY.ID = ACCOUNT.BUSINESS_ENTITY_ID
+              
+              where BUSINESS_ENTITY.EMAIL = 'automation_5@gmail.com'
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:50 PM</td>
+				<td class='step-details'>
+						************     DB Query executed successfully     ***************
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:50 PM</td>
+				<td class='step-details'>
+						******     Closing DB Connection      *******
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:51 PM</td>
+				<td class='step-details'>
+						******      DB Connection closed successfully     *******
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:51 PM</td>
+				<td class='step-details'>
+						sending myProfile api to http://10.95.0.178/be-api/profile
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:51 PM</td>
+				<td class='step-details'>
+						sending myProfile api {"csp":{"isDefault":"1","code":"FAWRYRTL","nameAr":"FAWRYRTL","sender":"FAWRY","id":"1","nameEn":"FAWRYRTL","sofUrl":"http:\/\/10.95.0.138:1727","channelCode":"1"},"socialLinks":{"id":2245},"phoneNumber":{"number":"01298155955","nationalNumber":"0129 815 5955","countryCode":"EG","dialCode":"+20","e164Number":"+201298155955","internationalNumber":"+20 129 815 5955"},"nameAr":"au24051","address":{"area":{"code":"5292","nameAr":"المنطقة الصناعية","id":"5292","nameEn":"المنطقة الصناعية","region":{"code":"PortSaid","nameAr":"بور سعيد","id":"294","nameEn":"Port Said"}},"address":"more address infoo2","id":2245},"nameEn":"au24051","id":2245,"category":{"code":"Online Store","nameAr":"متجر الكتروني","id":"2","nameEn":"Online Store"},"type":{"code":"Service Registeration","nameAr":"تسجيل الخدمة","id":"1","nameEn":"Service Registeration"},"email":"au24051@gmail.com","account":{"subAccounts":null,"clearingTerm":null,"accountBalanceModel":null,"clearingAccount":{"subAccounts":null,"clearingTerm":null,"accountBalanceModel":null,"clearingAccount":null,"id":"74958","businessEntity":null,"terminal":null,"accountNumber":"2000007583","type":"SDA","branch":null,"clearingNoOfDays":null,"status":"ACTIVE"},"id":"74958","terminal":null,"businessEntity":{"cif":"2000007583","csp":{"isDefault":"0","code":"FAWRYPORTAL","nameAr":"FAWRYPORTAL","sender":"FAWRYPORTAL","id":"2","nameEn":"FAWRYPORTAL","sofUrl":"http:\/\/10.95.0.138:1727","channelCode":"1"},"nameAr":"automation_5","nameEn":"automation_5","logoUri":"images\/2245\/logo\/1640848834330\/95690e0c8e634b9f8af30e177807c8f4.jpeg","creationDate":"2022-01-07 04:31:08","type":{"code":"individual","nameAr":"افراد","id":"2","nameEn":"Individual"},"parentId":null,"selfRegisteredMerchantPassword":null,"phoneNumber":"01298155955","channels":[{"code":null,"nameAr":null,"id":null,"nameEn":null},{"code":null,"nameAr":null,"id":null,"nameEn":null},{"code":null,"nameAr":"MOB","id":"2","nameEn":null}],"logo":null,"id":2245,"category":{"code":"Online Store","nameAr":"متجر الكتروني","id":"2","nameEn":"Online Store"},"user":{"mobileNumber":"01234567890","id":0,"businessEntity":{"cif":null,"csp":null,"nameAr":"BO","nameEn":"BO","logoUri":null,"creationDate":null,"type":null,"parentId":null,"selfRegisteredMerchantPassword":null,"phoneNumber":null,"logo":null,"id":0,"category":null,"user":null,"account":null,"email":"bo@fawry.com","status":null},"branch":null,"email":"bo@fawry.com","status":null},"account":null,"email":"automation_5@gmail.com","status":{"id":"1"}},"accountNumber":"2000007583","type":"SDA","branch":null,"clearingNoOfDays":null,"status":"ACTIVE"},"status":{"id":"1"}}
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:51 PM</td>
+				<td class='step-details'>
+						myProfile API response with
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:24:51 PM</td>
+				<td class='step-details'>
+						API Failed with Actual Status code 400 and the expected status code is 201
+					
+				</td>
+			</tr>
+			<tr class='log' status='error'>
+				<td class='status error' title='error' alt='error'><i class='material-icons'>error</i></td>
+				<td class='timestamp'>3:24:51 PM</td>
+				<td class='step-details'>
+						Error occurred in com.fawry.API.angularAutomation.tests.MyProfile$1.MyProfile
+					
+				</td>
+			</tr>
+			<tr class='log' status='error'>
+				<td class='status error' title='error' alt='error'><i class='material-icons'>error</i></td>
+				<td class='timestamp'>3:24:51 PM</td>
+				<td class='step-details'>
+						The following asserts failed:
+	expected [201] but found [400]
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:51 PM</td>
+				<td class='step-details'>
+						logging Testcase FAILED MyProfile in Extent Report
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:24:51 PM</td>
+				<td class='step-details'>
+						Test Case Name FAILED is MyProfile
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:24:51 PM</td>
+				<td class='step-details'>
+						EXCEPTION Thrown is java.lang.AssertionError: null
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:51 PM</td>
+				<td class='step-details'>
+						Taking Screenshot for the FAILED Testcase
+					
+				</td>
+			</tr>
+			<tr class='log' status='warning'>
+				<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
+				<td class='timestamp'>3:24:51 PM</td>
+				<td class='step-details'>
+						Error occured while logging testcase MyProfile result to extent report
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='3'>
+					<div class='test-heading'>
+						<span class='test-name'>Change My Profile with Exist email and Mob Number before</span>
+						<span class='test-time'>Jan 10, 2022 03:24:51 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 10, 2022 03:24:51 PM</span>
+	<span class='label end-time'>Jan 10, 2022 03:24:56 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+122ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:51 PM</td>
+				<td class='step-details'>
+						Change My Profile with Exist email and Mob Number before Test is CREATED
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:51 PM</td>
+				<td class='step-details'>
+						*******   Create an instance of ServiceDelegate to start backend verification     ********
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:51 PM</td>
+				<td class='step-details'>
+						***********      Openning DB connection to BUSINESS_ENTITY       **************
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:54 PM</td>
+				<td class='step-details'>
+						**********      DB Connection created successfully to BUSINESS_ENTITY       ***********
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:54 PM</td>
+				<td class='step-details'>
+						*********      Executing DB Query     ************
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:54 PM</td>
+				<td class='step-details'>
+						select BUSINESS_ENTITY.ID ,BUSINESS_ENTITY.NAME_EN, BUSINESS_ENTITY.NAME_AR, BUSINESS_ENTITY.PHONE_NUMBER, BUSINESS_ENTITY.EMAIL,BUSINESS_ENTITY.LOGO_URL,BUSINESS_ENTITY.STATUS_ID,BUSINESS_ENTITY.CIF,BUSINESS_ENTITY.CREATION_DATE,
+LK_CSP.ID as CSP_ID, LK_CSP.CODE as CSP_CODE,LK_CSP.NAME_EN as CSP_NAME_EN,LK_CSP.NAME_AR as CSP_NAME_AR,LK_CSP.IS_DEFAULT as CSP_IS_DEFAULT ,LK_CSP.CHANNEL_CODE as CSP_CHANNEL_CODE ,LK_CSP.SOF_URL as CSP_SOF_URL,LK_CSP.SENDER as CSP_SENDER,
+LK_BUSINESS_ENTITY_CATEGORY.ID as CATEGOTY_ID ,LK_BUSINESS_ENTITY_CATEGORY.CODE as CATEGOTY_CODE ,LK_BUSINESS_ENTITY_CATEGORY.NAME_EN as CATEGOTY_NAME_EN ,LK_BUSINESS_ENTITY_CATEGORY.NAME_AR as CATEGOTY_NAME_AR ,
+LK_BUSINESS_ENTITY_TYPE.ID as TYPE_ID ,LK_BUSINESS_ENTITY_TYPE.CODE as TYPE_CODE,LK_BUSINESS_ENTITY_TYPE.NAME_AR as TYPE_NAME_AR,LK_BUSINESS_ENTITY_TYPE.NAME_EN as TYPE_NAME_EN,
+LK_CHANNEL.ID as CHANNEL_ID,LK_CHANNEL.CODE as CHANNEL_CODE,LK_CHANNEL.NAME_EN as CHANNEL_NAME_EN,LK_CHANNEL.NAME_AR as CHANNEL_NAME_AR,
+BUSINESS_ENTITY_ADDRESS.ADDRESS as ADDRESS,
+LK_AREA.ID as AREA_ID,LK_AREA.CODE as AREA_CODE,LK_AREA.NAME_EN as AREA_NAME_EN,LK_AREA.NAME_AR as AREA_NAME_AR,
+LK_REGION.ID as REGION_ID,LK_REGION.CODE as REGION_CODE,LK_REGION.NAME_EN as REGION_NAME_EN,LK_REGION.NAME_AR as REGION_NAME_AR,
+SOCIAL_LINKS.FACEBOOK as FACEBOOK ,SOCIAL_LINKS.TWITTER as TWITTER ,SOCIAL_LINKS.INSTAGRAM as INSTAGRAM ,SOCIAL_LINKS.YOUTUBE as YOUTUBE ,SOCIAL_LINKS.WEBSITE as WEBSITE,
+ACCOUNT.ACCOUNT_NUMBER AS ACCOUNT_NUMBER,ACCOUNT.ID As ACCOUNT_ID ,ACCOUNT.BUSINESS_ENTITY_ID AS ACCOUNT_BUSINESS_ENTITY_ID,ACCOUNT.BRANCH_ID AS ACCOUNT_BRANCH_ID ,ACCOUNT.TERMINAL_ID AS ACCOUNT_TERMINAL_ID ,ACCOUNT.CLEARING_ACCOUNT_ID AS ACCOUNT_CLEARING_ACCOUNT_ID ,ACCOUNT.CLEARING_TERM AS ACCOUNT_CLEARING_TERM
+,ACCOUNT.CLEARING_NO_OF_DAYS AS ACCOUNT_CLEARING_NO_OF_DAYS ,ACCOUNT.ACCOUNT_BUSINESS_ENTITY_ID AS ACC_ACCOUNT_BUSINESS_ENTITY_ID,ACCOUNT.TYPE AS ACCOUNT_TYPE ,ACCOUNT.PARENT_ID AS ACCOUNT_PARENT_ID ,ACCOUNT.STATUS AS ACCOUNT_STATUS
+                from BUSINESS_ENTITY LEFT join LK_CSP
+              on BUSINESS_ENTITY.CSP_ID = LK_CSP.ID
+              
+              LEFT JOIN LK_BUSINESS_ENTITY_CATEGORY
+              on BUSINESS_ENTITY.BUSINESS_ENTITY_CATEGORY_ID = LK_BUSINESS_ENTITY_CATEGORY.ID
+              
+              LEFT JOIN LK_BUSINESS_ENTITY_TYPE
+              on BUSINESS_ENTITY.TYPE_ID = LK_BUSINESS_ENTITY_TYPE.ID
+              
+              LEFT JOIN BUSINESS_ENTITY_CHANNEL_CONFIG
+              on BUSINESS_ENTITY.ID = BUSINESS_ENTITY_CHANNEL_CONFIG.BUSINESS_ENTITY_ID
+              
+              LEFT JOIN LK_CHANNEL
+              on BUSINESS_ENTITY_CHANNEL_CONFIG.CHANNEL_ID = LK_CHANNEL.ID
+              
+              LEFT JOIN BUSINESS_ENTITY_ADDRESS
+              on BUSINESS_ENTITY.ID = BUSINESS_ENTITY_ADDRESS.BUSINESS_ENTITY_ID
+              
+              LEFT JOIN LK_AREA
+              on BUSINESS_ENTITY_ADDRESS.AREA_ID = LK_AREA.ID
+              
+              LEFT JOIN LK_REGION
+              on LK_AREA.REGION_ID = LK_REGION.ID
+              
+              LEFT JOIN SOCIAL_LINKS
+              on BUSINESS_ENTITY.ID = SOCIAL_LINKS.BUSINESS_ENTITY_ID
+              
+              LEFT JOIN ACCOUNT
+              ON BUSINESS_ENTITY.ID = ACCOUNT.BUSINESS_ENTITY_ID
+              
+              where BUSINESS_ENTITY.EMAIL = 'automation_5@gmail.com'
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:55 PM</td>
+				<td class='step-details'>
+						************     DB Query executed successfully     ***************
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:55 PM</td>
+				<td class='step-details'>
+						******     Closing DB Connection      *******
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:55 PM</td>
+				<td class='step-details'>
+						******      DB Connection closed successfully     *******
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:55 PM</td>
+				<td class='step-details'>
+						sending myProfile api to http://10.95.0.178/be-api/profile
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:55 PM</td>
+				<td class='step-details'>
+						sending myProfile api {"csp":{"isDefault":"1","code":"FAWRYRTL","nameAr":"FAWRYRTL","sender":"FAWRY","id":"1","nameEn":"FAWRYRTL","sofUrl":"http:\/\/10.95.0.138:1727","channelCode":"1"},"socialLinks":{"youtube":"www.youtube1.com","twitter":"www.twitter3.com","website":"www.website1.com","facebook":"www.facebook1.com","instagram":"www.instgram1.com","id":2245},"nameAr":"autoNameAR24055","address":{"area":{"code":"5292","nameAr":"المنطقة الصناعية","id":"5292","nameEn":"المنطقة الصناعية","region":{"code":"PortSaid","nameAr":"بور سعيد","id":"294","nameEn":"Port Said"}},"address":"more address infoo4","id":2245},"nameEn":"autoNameEn24055","type":{"code":"Service Registeration","nameAr":"تسجيل الخدمة","id":"1","nameEn":"Service Registeration"},"phoneNumber":{"number":"01298155955","nationalNumber":"0129 815 5955","countryCode":"EG","dialCode":"+20","e164Number":"+201298155955","internationalNumber":"+20 129 815 5955"},"channels":[{"code":"POS","nameAr":"POS","id":"1","nameEn":"POS"},{"code":"MOB","nameAr":"MOB","id":"2","nameEn":"MOB"},{"code":"INT","nameAr":"INT","id":"3","nameEn":"INT"}],"logo":"data:image\/jpeg;base64,\/9j\/4AAQSkZJRgABAQAAAQABAAD\/\/gA8Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2OTApLCBxdWFsaXR5ID0gMTAwCv\/","id":2245,"category":{"code":"Online Store","nameAr":"متجر الكتروني","id":"2","nameEn":"Online Store"},"email":"automation_5@gmail.com","account":{"subAccounts":null,"clearingTerm":null,"accountBalanceModel":null,"clearingAccount":{"subAccounts":null,"clearingTerm":null,"accountBalanceModel":null,"clearingAccount":null,"id":"74958","businessEntity":null,"terminal":null,"accountNumber":"2000007583","type":"SDA","branch":null,"clearingNoOfDays":null,"status":"ACTIVE"},"id":"74958","terminal":null,"businessEntity":{"cif":"2000007583","csp":{"isDefault":"0","code":"FAWRYPORTAL","nameAr":"FAWRYPORTAL","sender":"FAWRYPORTAL","id":"2","nameEn":"FAWRYPORTAL","sofUrl":"http:\/\/10.95.0.138:1727","channelCode":"1"},"nameAr":"automation_5","nameEn":"automation_5","logoUri":"images\/2245\/logo\/1640848834330\/95690e0c8e634b9f8af30e177807c8f4.jpeg","creationDate":"2022-01-07 04:31:08","type":{"code":"individual","nameAr":"افراد","id":"2","nameEn":"Individual"},"parentId":null,"selfRegisteredMerchantPassword":null,"phoneNumber":"01298155955","channels":[{"code":null,"nameAr":null,"id":null,"nameEn":null},{"code":null,"nameAr":null,"id":null,"nameEn":null},{"code":null,"nameAr":"MOB","id":"2","nameEn":null}],"logo":null,"id":2245,"category":{"code":"Online Store","nameAr":"متجر الكتروني","id":"2","nameEn":"Online Store"},"user":{"mobileNumber":"01234567890","id":0,"businessEntity":{"cif":null,"csp":null,"nameAr":"BO","nameEn":"BO","logoUri":null,"creationDate":null,"type":null,"parentId":null,"selfRegisteredMerchantPassword":null,"phoneNumber":null,"logo":null,"id":0,"category":null,"user":null,"account":null,"email":"bo@fawry.com","status":null},"branch":null,"email":"bo@fawry.com","status":null},"account":null,"email":"automation_5@gmail.com","status":{"id":"1"}},"accountNumber":"2000007583","type":"SDA","branch":null,"clearingNoOfDays":null,"status":"ACTIVE"},"status":{"id":"1"}}
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:56 PM</td>
+				<td class='step-details'>
+						myProfile API response with
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:24:56 PM</td>
+				<td class='step-details'>
+						API Failed with Actual Status code 400 and the expected status code is 201
+					
+				</td>
+			</tr>
+			<tr class='log' status='error'>
+				<td class='status error' title='error' alt='error'><i class='material-icons'>error</i></td>
+				<td class='timestamp'>3:24:56 PM</td>
+				<td class='step-details'>
+						Error occurred in com.fawry.API.angularAutomation.tests.MyProfile$1.MyProfile
+					
+				</td>
+			</tr>
+			<tr class='log' status='error'>
+				<td class='status error' title='error' alt='error'><i class='material-icons'>error</i></td>
+				<td class='timestamp'>3:24:56 PM</td>
+				<td class='step-details'>
+						The following asserts failed:
+	expected [201] but found [400]
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:56 PM</td>
+				<td class='step-details'>
+						logging Testcase FAILED MyProfile in Extent Report
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:24:56 PM</td>
+				<td class='step-details'>
+						Test Case Name FAILED is MyProfile
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:24:56 PM</td>
+				<td class='step-details'>
+						EXCEPTION Thrown is java.lang.AssertionError: null
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:56 PM</td>
+				<td class='step-details'>
+						Taking Screenshot for the FAILED Testcase
+					
+				</td>
+			</tr>
+			<tr class='log' status='warning'>
+				<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
+				<td class='timestamp'>3:24:56 PM</td>
+				<td class='step-details'>
+						Error occured while logging testcase MyProfile result to extent report
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+				<li class='test displayed active  fail' status='fail' bdd='false' test-id='4'>
+					<div class='test-heading'>
+						<span class='test-name'>Change My Profile with ALL exist data before</span>
+						<span class='test-time'>Jan 10, 2022 03:24:56 PM</span>
+						<span class='test-status right fail'>fail</span>
+					</div>
+					<div class='test-content hide'>
+<div class='test-time-info'>
+	<span class='label start-time'>Jan 10, 2022 03:24:56 PM</span>
+	<span class='label end-time'>Jan 10, 2022 03:25:00 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 4s+194ms</span>
+</div>
+<div class='test-steps'>
+	<table class='bordered table-results'>
+		<thead>
+			<tr>
+				<th>Status</th>
+				<th>Timestamp</th>
+				<th>Details</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:56 PM</td>
+				<td class='step-details'>
+						Change My Profile with ALL exist data before Test is CREATED
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:56 PM</td>
+				<td class='step-details'>
+						*******   Create an instance of ServiceDelegate to start backend verification     ********
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:56 PM</td>
+				<td class='step-details'>
+						***********      Openning DB connection to BUSINESS_ENTITY       **************
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:58 PM</td>
+				<td class='step-details'>
+						**********      DB Connection created successfully to BUSINESS_ENTITY       ***********
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:58 PM</td>
+				<td class='step-details'>
+						*********      Executing DB Query     ************
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:58 PM</td>
+				<td class='step-details'>
+						select BUSINESS_ENTITY.ID ,BUSINESS_ENTITY.NAME_EN, BUSINESS_ENTITY.NAME_AR, BUSINESS_ENTITY.PHONE_NUMBER, BUSINESS_ENTITY.EMAIL,BUSINESS_ENTITY.LOGO_URL,BUSINESS_ENTITY.STATUS_ID,BUSINESS_ENTITY.CIF,BUSINESS_ENTITY.CREATION_DATE,
+LK_CSP.ID as CSP_ID, LK_CSP.CODE as CSP_CODE,LK_CSP.NAME_EN as CSP_NAME_EN,LK_CSP.NAME_AR as CSP_NAME_AR,LK_CSP.IS_DEFAULT as CSP_IS_DEFAULT ,LK_CSP.CHANNEL_CODE as CSP_CHANNEL_CODE ,LK_CSP.SOF_URL as CSP_SOF_URL,LK_CSP.SENDER as CSP_SENDER,
+LK_BUSINESS_ENTITY_CATEGORY.ID as CATEGOTY_ID ,LK_BUSINESS_ENTITY_CATEGORY.CODE as CATEGOTY_CODE ,LK_BUSINESS_ENTITY_CATEGORY.NAME_EN as CATEGOTY_NAME_EN ,LK_BUSINESS_ENTITY_CATEGORY.NAME_AR as CATEGOTY_NAME_AR ,
+LK_BUSINESS_ENTITY_TYPE.ID as TYPE_ID ,LK_BUSINESS_ENTITY_TYPE.CODE as TYPE_CODE,LK_BUSINESS_ENTITY_TYPE.NAME_AR as TYPE_NAME_AR,LK_BUSINESS_ENTITY_TYPE.NAME_EN as TYPE_NAME_EN,
+LK_CHANNEL.ID as CHANNEL_ID,LK_CHANNEL.CODE as CHANNEL_CODE,LK_CHANNEL.NAME_EN as CHANNEL_NAME_EN,LK_CHANNEL.NAME_AR as CHANNEL_NAME_AR,
+BUSINESS_ENTITY_ADDRESS.ADDRESS as ADDRESS,
+LK_AREA.ID as AREA_ID,LK_AREA.CODE as AREA_CODE,LK_AREA.NAME_EN as AREA_NAME_EN,LK_AREA.NAME_AR as AREA_NAME_AR,
+LK_REGION.ID as REGION_ID,LK_REGION.CODE as REGION_CODE,LK_REGION.NAME_EN as REGION_NAME_EN,LK_REGION.NAME_AR as REGION_NAME_AR,
+SOCIAL_LINKS.FACEBOOK as FACEBOOK ,SOCIAL_LINKS.TWITTER as TWITTER ,SOCIAL_LINKS.INSTAGRAM as INSTAGRAM ,SOCIAL_LINKS.YOUTUBE as YOUTUBE ,SOCIAL_LINKS.WEBSITE as WEBSITE,
+ACCOUNT.ACCOUNT_NUMBER AS ACCOUNT_NUMBER,ACCOUNT.ID As ACCOUNT_ID ,ACCOUNT.BUSINESS_ENTITY_ID AS ACCOUNT_BUSINESS_ENTITY_ID,ACCOUNT.BRANCH_ID AS ACCOUNT_BRANCH_ID ,ACCOUNT.TERMINAL_ID AS ACCOUNT_TERMINAL_ID ,ACCOUNT.CLEARING_ACCOUNT_ID AS ACCOUNT_CLEARING_ACCOUNT_ID ,ACCOUNT.CLEARING_TERM AS ACCOUNT_CLEARING_TERM
+,ACCOUNT.CLEARING_NO_OF_DAYS AS ACCOUNT_CLEARING_NO_OF_DAYS ,ACCOUNT.ACCOUNT_BUSINESS_ENTITY_ID AS ACC_ACCOUNT_BUSINESS_ENTITY_ID,ACCOUNT.TYPE AS ACCOUNT_TYPE ,ACCOUNT.PARENT_ID AS ACCOUNT_PARENT_ID ,ACCOUNT.STATUS AS ACCOUNT_STATUS
+                from BUSINESS_ENTITY LEFT join LK_CSP
+              on BUSINESS_ENTITY.CSP_ID = LK_CSP.ID
+              
+              LEFT JOIN LK_BUSINESS_ENTITY_CATEGORY
+              on BUSINESS_ENTITY.BUSINESS_ENTITY_CATEGORY_ID = LK_BUSINESS_ENTITY_CATEGORY.ID
+              
+              LEFT JOIN LK_BUSINESS_ENTITY_TYPE
+              on BUSINESS_ENTITY.TYPE_ID = LK_BUSINESS_ENTITY_TYPE.ID
+              
+              LEFT JOIN BUSINESS_ENTITY_CHANNEL_CONFIG
+              on BUSINESS_ENTITY.ID = BUSINESS_ENTITY_CHANNEL_CONFIG.BUSINESS_ENTITY_ID
+              
+              LEFT JOIN LK_CHANNEL
+              on BUSINESS_ENTITY_CHANNEL_CONFIG.CHANNEL_ID = LK_CHANNEL.ID
+              
+              LEFT JOIN BUSINESS_ENTITY_ADDRESS
+              on BUSINESS_ENTITY.ID = BUSINESS_ENTITY_ADDRESS.BUSINESS_ENTITY_ID
+              
+              LEFT JOIN LK_AREA
+              on BUSINESS_ENTITY_ADDRESS.AREA_ID = LK_AREA.ID
+              
+              LEFT JOIN LK_REGION
+              on LK_AREA.REGION_ID = LK_REGION.ID
+              
+              LEFT JOIN SOCIAL_LINKS
+              on BUSINESS_ENTITY.ID = SOCIAL_LINKS.BUSINESS_ENTITY_ID
+              
+              LEFT JOIN ACCOUNT
+              ON BUSINESS_ENTITY.ID = ACCOUNT.BUSINESS_ENTITY_ID
+              
+              where BUSINESS_ENTITY.EMAIL = 'automation_5@gmail.com'
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:59 PM</td>
+				<td class='step-details'>
+						************     DB Query executed successfully     ***************
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:59 PM</td>
+				<td class='step-details'>
+						******     Closing DB Connection      *******
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:59 PM</td>
+				<td class='step-details'>
+						******      DB Connection closed successfully     *******
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:59 PM</td>
+				<td class='step-details'>
+						sending myProfile api to http://10.95.0.178/be-api/profile
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:24:59 PM</td>
+				<td class='step-details'>
+						sending myProfile api {"csp":{"isDefault":"1","code":"FAWRYRTL","nameAr":"FAWRYRTL","sender":"FAWRY","id":"1","nameEn":"FAWRYRTL","sofUrl":"http:\/\/10.95.0.138:1727","channelCode":"1"},"socialLinks":{"youtube":"www.youtube1.com","twitter":"www.twitter2.com","website":"www.website1.com","facebook":"www.facebook1.com","instagram":"www.instgram1.com","id":2245},"nameAr":"automation_5","address":{"area":{"code":"5292","nameAr":"المنطقة الصناعية","id":"5292","nameEn":"المنطقة الصناعية","region":{"code":"PortSaid","nameAr":"بور سعيد","id":"294","nameEn":"Port Said"}},"address":"more address infoo3","id":2245},"nameEn":"automation_5","type":{"code":"Service Registeration","nameAr":"تسجيل الخدمة","id":"1","nameEn":"Service Registeration"},"phoneNumber":{"number":"01298155955","nationalNumber":"0129 815 5955","countryCode":"EG","dialCode":"+20","e164Number":"+201298155955","internationalNumber":"+20 129 815 5955"},"channels":[{"code":"POS","nameAr":"POS","id":"1","nameEn":"POS"},{"code":"MOB","nameAr":"MOB","id":"2","nameEn":"MOB"},{"code":"INT","nameAr":"INT","id":"3","nameEn":"INT"}],"logo":"data:image\/jpeg;base64,\/9j\/4AAQSkZJRgABAQAAAQABAAD\/\/gA8Q1JFQVRPUjogZ2QtanBlZyB2MS4wICh1c2luZyBJSkcgSlBFRyB2OTApLCBxdWFsaXR5ID0gMTAwCv\/","id":2245,"category":{"code":"Online Store","nameAr":"متجر الكتروني","id":"2","nameEn":"Online Store"},"email":"automation_5@gmail.com","account":{"subAccounts":null,"clearingTerm":null,"accountBalanceModel":null,"clearingAccount":{"subAccounts":null,"clearingTerm":null,"accountBalanceModel":null,"clearingAccount":null,"id":"74958","businessEntity":null,"terminal":null,"accountNumber":"2000007583","type":"SDA","branch":null,"clearingNoOfDays":null,"status":"ACTIVE"},"id":"74958","terminal":null,"businessEntity":{"cif":"2000007583","csp":{"isDefault":"0","code":"FAWRYPORTAL","nameAr":"FAWRYPORTAL","sender":"FAWRYPORTAL","id":"2","nameEn":"FAWRYPORTAL","sofUrl":"http:\/\/10.95.0.138:1727","channelCode":"1"},"nameAr":"automation_5","nameEn":"automation_5","logoUri":"images\/2245\/logo\/1640848834330\/95690e0c8e634b9f8af30e177807c8f4.jpeg","creationDate":"2022-01-07 04:31:08","type":{"code":"individual","nameAr":"افراد","id":"2","nameEn":"Individual"},"parentId":null,"selfRegisteredMerchantPassword":null,"phoneNumber":"01298155955","channels":[{"code":null,"nameAr":null,"id":null,"nameEn":null},{"code":null,"nameAr":null,"id":null,"nameEn":null},{"code":null,"nameAr":"MOB","id":"2","nameEn":null}],"logo":null,"id":2245,"category":{"code":"Online Store","nameAr":"متجر الكتروني","id":"2","nameEn":"Online Store"},"user":{"mobileNumber":"01234567890","id":0,"businessEntity":{"cif":null,"csp":null,"nameAr":"BO","nameEn":"BO","logoUri":null,"creationDate":null,"type":null,"parentId":null,"selfRegisteredMerchantPassword":null,"phoneNumber":null,"logo":null,"id":0,"category":null,"user":null,"account":null,"email":"bo@fawry.com","status":null},"branch":null,"email":"bo@fawry.com","status":null},"account":null,"email":"automation_5@gmail.com","status":{"id":"1"}},"accountNumber":"2000007583","type":"SDA","branch":null,"clearingNoOfDays":null,"status":"ACTIVE"},"status":{"id":"1"}}
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:25:00 PM</td>
+				<td class='step-details'>
+						myProfile API response with
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:25:00 PM</td>
+				<td class='step-details'>
+						API Failed with Actual Status code 400 and the expected status code is 201
+					
+				</td>
+			</tr>
+			<tr class='log' status='error'>
+				<td class='status error' title='error' alt='error'><i class='material-icons'>error</i></td>
+				<td class='timestamp'>3:25:00 PM</td>
+				<td class='step-details'>
+						Error occurred in com.fawry.API.angularAutomation.tests.MyProfile$1.MyProfile
+					
+				</td>
+			</tr>
+			<tr class='log' status='error'>
+				<td class='status error' title='error' alt='error'><i class='material-icons'>error</i></td>
+				<td class='timestamp'>3:25:00 PM</td>
+				<td class='step-details'>
+						The following asserts failed:
+	expected [201] but found [400]
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:25:00 PM</td>
+				<td class='step-details'>
+						logging Testcase FAILED MyProfile in Extent Report
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:25:00 PM</td>
+				<td class='step-details'>
+						Test Case Name FAILED is MyProfile
+					
+				</td>
+			</tr>
+			<tr class='log' status='fail'>
+				<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
+				<td class='timestamp'>3:25:00 PM</td>
+				<td class='step-details'>
+						EXCEPTION Thrown is java.lang.AssertionError: null
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:25:00 PM</td>
+				<td class='step-details'>
+						Taking Screenshot for the FAILED Testcase
+					
+				</td>
+			</tr>
+			<tr class='log' status='warning'>
+				<td class='status warning' title='warning' alt='warning'><i class='material-icons'>warning</i></td>
+				<td class='timestamp'>3:25:00 PM</td>
+				<td class='step-details'>
+						Error occured while logging testcase MyProfile result to extent report
+					
+				</td>
+			</tr>
+			<tr class='log' status='info'>
+				<td class='status info' title='info' alt='info'><i class='material-icons'>info_outline</i></td>
+				<td class='timestamp'>3:25:00 PM</td>
+				<td class='step-details'>
+						Closing Extent report after Test
+					
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<!-- subview left -->
+	<div class='subview-right left'>
+		<div class='view-summary'>
+			<div id='step-filters' class="right sr-filters">
+				<a class="btn-floating waves-effect waves-light green" status="pass" alt="pass" title="pass"><i class="material-icons">check_circle</i></a>
+				<a class="btn-floating waves-effect waves-light red" status="fail" alt="fail" title="fail"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light red darken-4" status="fatal" alt="fatal" title="fatal"><i class="material-icons">cancel</i></a>
+				<a class="btn-floating waves-effect waves-light pink text-lighten-1" status="error" alt="error" title="error"><i class="material-icons">error</i></a>
+				<a class="btn-floating waves-effect waves-light orange" alt="warning" status="warning" title="warning"><i class="material-icons">warning</i></a>
+				<a class="btn-floating waves-effect waves-light teal" status="skip" alt="skip" title="skip"><i class="material-icons">redo</i></a>
+				<a class="btn-floating waves-effect waves-light grey" status="clear" alt="Clear filters" title="Clear filters"><i class="material-icons">clear</i></a>
+			</div>
+			<h5 class='test-name'></h5>
+		</div>
+	</div>
+	<!-- subview right -->
+</div>
+<!-- test view --><!-- category view --><!-- exception view --><div id='dashboard-view' class='view hide'>
+	<div class='card-panel transparent np-v'>
+		<h5>Dashboard</h5>
+
+		<div class='row'>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Tests
+					<div class='panel-lead'>4</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Steps
+					<div class='panel-lead'>0</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Start
+					<div class='panel-lead'>Jan 10, 2022 03:24:39 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+			 		End
+			 		<div class='panel-lead'>Jan 10, 2022 03:25:00 PM</div>
+				</div>
+			</div>
+			<div class='col s2'>
+				<div class='card-panel r'>
+					Time Taken
+					<div class='panel-lead'>0h 0m 20s+657ms</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- dashboard view -->
+<!-- testrunner-logs view -->		</div>
+		<!-- container -->
+		<script>
+			var statusGroup = {
+                parentCount: 4,
+				passParent: 0,
+				failParent: 4,
+				fatalParent: 0,
+				errorParent: 0,
+				warningParent: 0,
+				skipParent: 0,
+				exceptionsParent: 4,
+				childCount: 0,
+				passChild: 0,
+				failChild: 0,
+				fatalChild: 0,
+				errorChild: 0,
+				warningChild: 0,
+				skipChild: 0,
+				infoChild: 0,
+				debugChild: 0,
+				exceptionsChild: 0,
+				grandChildCount: 0,
+				passGrandChild: 0,
+				failGrandChild: 0,
+				fatalGrandChild: 0,
+				errorGrandChild: 0,
+				warningGrandChild: 0,
+				skipGrandChild: 0,
+				infoGrandChild: 0,
+				debugGrandChild: 0,
+				exceptionsGrandChild: 0,
+			};
+		</script>
+		<script>
+			var timeline = {
+			        "Change My Profile with ALL valid Feilds data":4.168,"Change My Profile with only mandatory data":4.123,"Change My Profile with Exist email and Mob Number before":4.122,"Change My Profile with ALL exist data before":4.194
+			};
+		</script>
+		<script src='https://cdn.rawgit.com/extent-framework/extent-github-cdn/b65cd69/v3html/js/extent.js' type='text/javascript'></script>
+		<script type='text/javascript'>
+		</script>
+	</body>
+</html>

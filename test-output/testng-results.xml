@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="1" total="4" passed="0" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2020-11-25T19:57:44 AEDT" name="Suite" finished-at="2020-11-25T19:59:44 AEDT" duration-ms="120216">
+    <groups>
+    </groups>
+    <test started-at="2020-11-25T19:57:44 AEDT" name="Chrome test" finished-at="2020-11-25T19:59:44 AEDT" duration-ms="120216">
+      <class name="LoyaltyProgsTests">
+        <test-method is-config="true" signature="setExtent(java.lang.String)[pri:0, instance:LoyaltyProgsTests@be68757]" started-at="2020-11-25T19:57:44 AEDT" name="setExtent" description="Setting up extent report" finished-at="2020-11-25T19:57:44 AEDT" duration-ms="391" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setExtent -->
+        <test-method is-config="true" signature="loadConfiguration(java.lang.String, java.lang.String)[pri:0, instance:LoyaltyProgsTests@be68757]" started-at="2020-11-25T19:57:44 AEDT" name="loadConfiguration" description="Setting up selenium webdriver before each class run" finished-at="2020-11-25T19:57:55 AEDT" duration-ms="11097" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[http://10.95.0.121:8000/]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadConfiguration -->
+        <test-method is-config="true" signature="loginSuccessfully()[pri:0, instance:LoyaltyProgsTests@be68757]" started-at="2020-11-25T19:57:55 AEDT" name="loginSuccessfully" description="Login successfully to the application in order to proceed in business tests" finished-at="2020-11-25T19:57:56 AEDT" duration-ms="519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSuccessfully -->
+        <test-method is-config="true" signature="provideLoyaltyProgTD()[pri:0, instance:LoyaltyProgsTests@be68757]" started-at="2020-11-25T19:57:56 AEDT" name="provideLoyaltyProgTD" finished-at="2020-11-25T19:57:56 AEDT" duration-ms="510" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- provideLoyaltyProgTD -->
+        <test-method is-config="true" signature="navigateToLoyaltyPrograms()[pri:0, instance:LoyaltyProgsTests@be68757]" started-at="2020-11-25T19:57:56 AEDT" name="navigateToLoyaltyPrograms" finished-at="2020-11-25T19:57:59 AEDT" duration-ms="3164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToLoyaltyPrograms -->
+        <test-method signature="updateLoyaltyProgram(com.fawry.promoLoyalty.angularAutomation.dataModels.LoyaltyProgDM)[pri:1, instance:LoyaltyProgsTests@be68757]" started-at="2020-11-25T19:57:59 AEDT" name="updateLoyaltyProgram" description="Validate Updating loyalty program Functionalities" data-provider="updateLoyaltyProgDP" finished-at="2020-11-25T19:58:37 AEDT" duration-ms="38121" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.fawry.promoLoyalty.angularAutomation.dataModels.LoyaltyProgDM@7bbcf6f0]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Success] but found [Failed]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Success] but found [Failed]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at LoyaltyProgsTests.assertAddUpdateLoyaltyProg(LoyaltyProgsTests.java:109)
+at LoyaltyProgsTests.updateLoyaltyProgram(LoyaltyProgsTests.java:91)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateLoyaltyProgram -->
+        <test-method is-config="true" signature="logTestStatusForReport(org.testng.ITestResult)[pri:0, instance:LoyaltyProgsTests@be68757]" started-at="2020-11-25T19:58:37 AEDT" name="logTestStatusForReport" description="Logging test status to log file and extent report" finished-at="2020-11-25T19:58:38 AEDT" duration-ms="514" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateLoyaltyProgram status=FAILURE method=LoyaltyProgsTests.updateLoyaltyProgram(com.fawry.promoLoyalty.angularAutomation.dataModels.LoyaltyProgDM)[pri:1, instance:LoyaltyProgsTests@be68757] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestStatusForReport -->
+        <test-method is-config="true" signature="navigateToLoyaltyPrograms()[pri:0, instance:LoyaltyProgsTests@be68757]" started-at="2020-11-25T19:58:38 AEDT" name="navigateToLoyaltyPrograms" finished-at="2020-11-25T19:58:38 AEDT" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToLoyaltyPrograms -->
+        <test-method signature="updateLoyaltyProgram(com.fawry.promoLoyalty.angularAutomation.dataModels.LoyaltyProgDM)[pri:1, instance:LoyaltyProgsTests@be68757]" started-at="2020-11-25T19:58:38 AEDT" name="updateLoyaltyProgram" description="Validate Updating loyalty program Functionalities" data-provider="updateLoyaltyProgDP" finished-at="2020-11-25T19:59:10 AEDT" duration-ms="32210" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.fawry.promoLoyalty.angularAutomation.dataModels.LoyaltyProgDM@7bd38fed]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Success] but found [Failed]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Success] but found [Failed]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at LoyaltyProgsTests.assertAddUpdateLoyaltyProg(LoyaltyProgsTests.java:109)
+at LoyaltyProgsTests.updateLoyaltyProgram(LoyaltyProgsTests.java:91)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateLoyaltyProgram -->
+        <test-method is-config="true" signature="logTestStatusForReport(org.testng.ITestResult)[pri:0, instance:LoyaltyProgsTests@be68757]" started-at="2020-11-25T19:59:10 AEDT" name="logTestStatusForReport" description="Logging test status to log file and extent report" finished-at="2020-11-25T19:59:11 AEDT" duration-ms="538" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateLoyaltyProgram status=FAILURE method=LoyaltyProgsTests.updateLoyaltyProgram(com.fawry.promoLoyalty.angularAutomation.dataModels.LoyaltyProgDM)[pri:1, instance:LoyaltyProgsTests@be68757] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestStatusForReport -->
+        <test-method is-config="true" signature="navigateToLoyaltyPrograms()[pri:0, instance:LoyaltyProgsTests@be68757]" started-at="2020-11-25T19:59:11 AEDT" name="navigateToLoyaltyPrograms" finished-at="2020-11-25T19:59:11 AEDT" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToLoyaltyPrograms -->
+        <test-method signature="updateLoyaltyProgram(com.fawry.promoLoyalty.angularAutomation.dataModels.LoyaltyProgDM)[pri:1, instance:LoyaltyProgsTests@be68757]" started-at="2020-11-25T19:59:11 AEDT" name="updateLoyaltyProgram" description="Validate Updating loyalty program Functionalities" data-provider="updateLoyaltyProgDP" finished-at="2020-11-25T19:59:43 AEDT" duration-ms="32151" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[com.fawry.promoLoyalty.angularAutomation.dataModels.LoyaltyProgDM@36b53f08]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Success] but found [Failed]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Success] but found [Failed]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at LoyaltyProgsTests.assertAddUpdateLoyaltyProg(LoyaltyProgsTests.java:109)
+at LoyaltyProgsTests.updateLoyaltyProgram(LoyaltyProgsTests.java:91)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:132)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:599)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:174)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:822)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:147)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:764)
+at org.testng.TestRunner.run(TestRunner.java:585)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1218)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1140)
+at org.testng.TestNG.runSuites(TestNG.java:1069)
+at org.testng.TestNG.run(TestNG.java:1037)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateLoyaltyProgram -->
+        <test-method is-config="true" signature="logTestStatusForReport(org.testng.ITestResult)[pri:0, instance:LoyaltyProgsTests@be68757]" started-at="2020-11-25T19:59:43 AEDT" name="logTestStatusForReport" description="Logging test status to log file and extent report" finished-at="2020-11-25T19:59:43 AEDT" duration-ms="484" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=updateLoyaltyProgram status=FAILURE method=LoyaltyProgsTests.updateLoyaltyProgram(com.fawry.promoLoyalty.angularAutomation.dataModels.LoyaltyProgDM)[pri:1, instance:LoyaltyProgsTests@be68757] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logTestStatusForReport -->
+        <test-method is-config="true" signature="closeDriver()[pri:0, instance:LoyaltyProgsTests@be68757]" started-at="2020-11-25T19:59:43 AEDT" name="closeDriver" description="Quitting selenium driver after each class run" finished-at="2020-11-25T19:59:44 AEDT" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeDriver -->
+        <test-method is-config="true" signature="endReport()[pri:0, instance:LoyaltyProgsTests@be68757]" started-at="2020-11-25T19:59:44 AEDT" name="endReport" description="Closing extent report after running Test" finished-at="2020-11-25T19:59:44 AEDT" duration-ms="204" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- endReport -->
+      </class> <!-- LoyaltyProgsTests -->
+    </test> <!-- Chrome test -->
+  </suite> <!-- Suite -->
+</testng-results>

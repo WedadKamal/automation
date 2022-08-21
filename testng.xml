@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="Business Entity" >
+	<test thread-count="5" name="Business Entity Tests">
+		<classes>
+
+			<class name="com.fawry.API.angularAutomation.tests.ApiLogin" />
+			<class name="com.fawry.API.angularAutomation.tests.AddBusinessEntityAPI" />
+			<class name="com.fawry.API.angularAutomation.tests.GetBusinessEntityAPI" />
+			<class name="com.fawry.API.angularAutomation.tests.MyProfile" />
+			<class name="com.fawry.API.angularAutomation.tests.UpdateBusinessEntityAPI" />
+			<class name="com.fawry.API.angularAutomation.tests.LinkBeBe" />
+			<class name="com.fawry.API.angularAutomation.tests.LinkBeBranch" />
+			<class name="com.fawry.API.angularAutomation.tests.LinkBeCallCenter" />
+			<class name="com.fawry.API.angularAutomation.tests.LinkBeComplain" />
+			<class name="com.fawry.API.angularAutomation.tests.LinkBeEvent" />
+			<class name="com.fawry.API.angularAutomation.tests.LinkBeFP" />
+			<class name="com.fawry.API.angularAutomation.tests.LinkBeInv" />
+			<class name="com.fawry.API.angularAutomation.tests.LinkBeMyAccount" />
+			<class name="com.fawry.API.angularAutomation.tests.LinkBeOrder" />
+			<class name="com.fawry.API.angularAutomation.tests.LinkBeProduct" />
+			<class name="com.fawry.API.angularAutomation.tests.LinkBePromo" />
+			<class name="com.fawry.API.angularAutomation.tests.LinkBeReport" />
+			<class name="com.fawry.API.angularAutomation.tests.LinkBeStore" />
+			<class name="com.fawry.API.angularAutomation.tests.LinkBeUsers" />
+			<class name="com.fawry.API.angularAutomation.tests.LogOutBeAPI" />
+		</classes>
+	</test>
+</suite>
+
+

@@ -1,0 +1,70 @@
+package com.fawry.API.angularAutomation.constants.excelIndices;
+
+public class LinkBeWithPromoExcellndices extends ExcelInices{
+
+
+    public static final short app_promo_be =1;
+    public static final short app_promo_deal =2;
+    public static final short app_promo_deal_manage =3;
+    public static final short app_promo_deal_view =4;
+    public static final short app_promo_customer_offer =5;
+    public static final short app_promo_customer_offer_campaign =6;
+    public static final short app_promo_campaign_view =7;
+    public static final short app_promo_campaign_manage =8;
+    public static final short app_promo_customer_offer_discount_code =9;
+    public static final short app_promo_customer_offer_discount_view =10;
+    public static final short app_promo_customer_offer_discount_manage =11;
+    public static final short app_promo_product =12;
+    public static final short app_promo_product_feature =13;
+    public static final short app_promo_product_manage =14;
+    public static final short app_promo_product_view =15;
+    public static final short app_promo_category_feature =16;
+    public static final short app_promo_category_view =17;
+    public static final short app_promo_category_manage =18;
+    public static final short app_promo_branch =19;
+    public static final short app_promo_branch_view =20;
+    public static final short app_promo_branch_manage =21;
+    public static final short app_promo_emp =22;
+    public static final short app_promo_emp_view =23;
+    public static final short app_promo_emp_manage =24;
+    public static final short app_promo_redemption_manage =25;
+    public static final short app_promo_redemption_problem =26;
+    public static final short app_promo_redemption_coupon_operation =27;
+    public static final short app_promo_redemption_coupon_redemption =28;
+    public static final short app_promo_redemption_emp_redemption =29;
+    public static final short app_promo_loyalty =30;
+    public static final short app_promo_loyalty_program =31;
+    public static final short app_promo_loyalty_program_view =32;
+    public static final short app_promo_loyalty_program_manage =33;
+    public static final short app_promo_loyalty_customer =34;
+    public static final short app_promo_loyalty_customer_view =35;
+    public static final short app_promo_loyalty_customer_manage =36;
+    public static final short app_promo_loyalty_offer =37;
+    public static final short app_promo_loyalty_offer_view  =38;
+    public static final short app_promo_loyalty_offer_manage  =39;
+    public static final short app_promo_loyalty_reports =40;
+    public static final short app_promo_loyalty_points =41;
+    public static final short app_promo_loyalty_points_view =42;
+    public static final short app_promo_loyalty_points_manage =43;
+    public static final short app_promo_installment =44;
+    public static final short app_promo_installment_bank =45;
+    public static final short app_promo_installment_direct =46;
+    public static final short app_promo_installment_bank_view =47;
+    public static final short app_promo_installment_bank_manage =48;
+    public static final short app_promo_installment_direct_view =49;
+    public static final short app_promo_installment_direct_manage =50;
+    public static final short app_promo_static_pages =51;
+    public static final short app_promo_static_pages_view=52;
+    public static final short app_promo_static_pages_manage=53;
+    public static final short app_promo_accounts=54;
+    public static final short app_promo_reconciliation=55;
+    public static final short app_promo_reports=56;
+    public static final short app_promo_accounting=57;
+    public static final short app_promo_audit_trail_report=58;
+    public static final short app_promo_dashboard=59;
+    public static final short integrationUrl=60;
+    public static final short ExpectedStatusCode=61;
+    public static final short BE_Name=62;
+    public static final short error_code=63;
+
+}
